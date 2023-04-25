@@ -20,7 +20,7 @@ function App() {
     fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Empty dependency array for componentDidMount-like effect
-
+  ;
 
   // const apiTest = async () => {
   //   try {

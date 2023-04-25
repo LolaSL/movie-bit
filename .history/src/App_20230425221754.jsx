@@ -20,7 +20,13 @@ function App() {
     fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Empty dependency array for componentDidMount-like effect
+  // useEffect(() => {
+  //  fetchApiConfig();
+  //  genresCall();
+  // apiTest()
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   // const apiTest = async () => {
   //   try {

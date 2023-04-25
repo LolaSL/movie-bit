@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import { fetchDataFromApi } from "./apis/api.js";
+import {  useEffect } from "react";
+import { fetchDataFromApi } from './apis/api.js';
 import { useSelector, useDispatch } from "react-redux";
-import { getApiConfiguration, getGenres } from "./store.js/homeSlice.js";
+import { getApiConfiguration, getGenres } from "./store/homeSlice.js";
 
 function App() {
   const dispatch = useDispatch();
@@ -9,18 +9,10 @@ function App() {
   console.log(url);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        await fetchApiConfig(dispatch);
-        await genresCall(dispatch);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Empty dependency array for componentDidMount-like effect
-
+    fetchApiConfig();
+    genresCall();
+    // apiTest()
+  }, []);
 
   // const apiTest = async () => {
   //   try {
@@ -34,34 +26,32 @@ function App() {
     try {
       const res = await fetchDataFromApi("/configuration");
       console.log(res);
-
+  
       const url = {
         backdrop: res.images.secure_base_url + "original",
         poster: res.images.secure_base_url + "original",
         profile: res.images.secure_base_url + "original",
       };
-
+  
       dispatch(getApiConfiguration(url));
     } catch (error) {
       console.log(error);
     }
   };
-
+  
   const genresCall = async () => {
     try {
       const endPoints = ["tv", "movie"];
       const allGenres = {};
-
-      const promises = endPoints.map((url) =>
-        fetchDataFromApi(`/genre/${url}/list`)
-      );
-
-      const response = await Promise.all(promises);
-      console.log(response);
-      response.forEach(({ genres }) => {
+  
+      const promises = endPoints.map((url) => fetchDataFromApi(`/genre/${url}/list`));
+  
+      const data = await Promise.all(promises);
+      console.log(data);
+      data.forEach(({ genres }) => {
         genres.forEach((item) => (allGenres[item.id] = item));
       });
-
+  
       dispatch(getGenres(allGenres));
     } catch (error) {
       console.log(error);
@@ -69,10 +59,11 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>APP</h1>
-    </div>
-  );
+ 
+      <div className="App">
+        <h1>APP</h1>
+  </div>
+  )
 }
 
 export default App;
