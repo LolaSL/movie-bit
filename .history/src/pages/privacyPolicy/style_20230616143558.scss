@@ -1,0 +1,41 @@
+.container {
+    height: auto;
+    h1 {
+      color: var(--white);
+      text-align: center;
+      padding-top: 120px;
+    }
+    h3 {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 40px;
+      color: var(--white);
+      margin: 30px;
+      font-size: 20px;
+      font-style: normal;
+      font-family:Arial, Helvetica, sans-serif;
+      padding: 20px;
+      text-align: justify;
+    }
+    .wpembed-toc{
+      padding:20px 30px;
+      line-height: 30px;
+    
+    }
+    .wpembed-toc a{
+        text-decoration: none;
+    }
+     p{
+      font-family:Arial, Helvetica, sans-serif;
+      padding: 20px 30px;
+      text-align: justify;
+      color: var(--white);
+      line-height: 40px;
+      font-size: 20px;
+    }
+   
+  }
