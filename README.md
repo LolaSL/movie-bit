@@ -6,15 +6,15 @@
 
 ## Objective
 
-### To create Demo MOVIE-BIT Management System that keeps the Top Cast of actors, official videos, similar movies, recommended movies, movies, movie descriptions, and movie details; a list of movies and tv-shows with the selection by genres and sorting by many options such as title, release, popularity and rating
+### To create a Demo MOVIE-BIT Management System that keeps the Top Cast of actors, official videos, similar movies, recommended movies, movies, movie descriptions, and movie details; a list of movies and tv-shows with the selection by genres and sorting by many options such as title, release, popularity, and rating
 
 ## Abstract
 
-### This project intends to include various features related to an MOVIE-BIT Management System i.e. information about movies, actors, genres and etc. The main aim is to help movie lovers know about all kinds of movies and choose interesting ones
+### This project intends to include various features related to a MOVIE-BIT Management System i.e. information about movies, actors, genres and etc. The main aim is to help movie lovers know about all kinds of movies and choose interesting ones
 
 ## Link
 
-https://
+[https://](https://movie-bit.netlify.app/)]
 
 ## Getting Started with npm create vite@latest + React
 
@@ -114,7 +114,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
