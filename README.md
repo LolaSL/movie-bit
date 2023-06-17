@@ -14,7 +14,7 @@
 
 ## Link
 
-[https://](https://movie-bit.netlify.app/)]
+https://movie-bit.netlify.app/[(https://movie-bit.netlify.app/)]
 
 ## Getting Started with npm create vite@latest + React
 
