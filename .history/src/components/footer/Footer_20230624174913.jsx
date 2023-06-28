@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="footer" data-testid="footer-test">
       <ContentWrapper>
-        <ul className="menuItems" data-testid="ul-test">
+        <ul className="menuItems" data-test="ul-test">
           <Link to="/terms-of-use" className="menuItem">
             Terms Of Use
           </Link>
@@ -27,7 +27,7 @@ const Footer = () => {
             seeing.
           </p>
         </div>
-        <div className="socialIcons" data-testid="socialIcons-test">
+        <div className="socialIcons" data-test="socialIcons-test">
           <SocialIcon
             className="icon"
             url="https://github.com/"

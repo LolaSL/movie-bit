@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { SocialIcon } from "react-social-icons";
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+// import Footer from "../footer/Footer";
 import React from 'react'
 
 

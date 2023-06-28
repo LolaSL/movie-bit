@@ -2,8 +2,16 @@ import { render, screen } from "@testing-library/react";
 import { SocialIcon } from "react-social-icons";
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+// import Footer from "../footer/Footer";
 import React from 'react'
 
+describe("Footer renders correctly", () => {
+  test("renders correctly", () => {
+    render(<footer);
+    const footerElement = screen.getByTestId('footer');
+    expect(footerElement.textContent).toBeInTheDocument();
+  });
+});
 
 describe("footer", () => {
   test("list renders correctly", () => {
@@ -86,4 +94,9 @@ describe("footer", () => {
     expect(textElement).toBeDefined();
   });
 
+  // test("renders correctly", () => {
+  //   render(<Footer />);
+  //   const footerElement = screen.getByRole("footer");
+  //   expect(footerElement.textContent).toBeInTheDocument();
+  // });
 });

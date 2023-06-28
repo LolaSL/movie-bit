@@ -14,7 +14,7 @@
 
 ## Link
 
-https://
+<https://movie-bit.netlify.app>
 
 ## Getting Started with npm create vite@latest + React
 
@@ -26,9 +26,9 @@ https://
 
 ### Enter my API in .env file VITE_APP_TMDB_TOKEN = 'My_APP_Key'
 
-### To change  css files to scss extention
+### To change css files to scss extention
 
-This project was created  with vite@latest + React
+This project was created with vite@latest + React
 
 ## Technical stack
 
@@ -44,7 +44,7 @@ This project was created  with vite@latest + React
 
 #### React Router
 
-#### Tests  (not mandatory)
+#### Tests (not mandatory)
 
 #### Github
 
@@ -60,9 +60,9 @@ This project was created  with vite@latest + React
 
 #### The title and seach bar
 
-#### "Trending" and "Top Rated" Carousels with the announcement of movies with toggled buttons "Day" and  "Week" for toggling movies by day or by week popularity; also the left and the right arrows, for listing the movie pictures. It should present the new list of movie pictures
+#### "Trending" and "Top Rated" Carousels with the announcement of movies with toggled buttons "Day" and "Week" for toggling movies by day or by week popularity; also the left and the right arrows, for listing the movie pictures. It should present the new list of movie pictures
 
-#### "What is popular"  Carousels with the announcement of movies/tv shows with toggled buttons "Movies" and  "TV Shows" for toggling movies by movie or tv shows popularity; also the left and the right arrows, for listing the movie pictures. It should present the new list of movie pictures
+#### "What is popular" Carousels with the announcement of movies/tv shows with toggled buttons "Movies" and "TV Shows" for toggling movies by movie or tv shows popularity; also the left and the right arrows, for listing the movie pictures. It should present the new list of movie pictures
 
 #### The Footer with page tabs: Terms of use, Privacy-Policy and About. By clicking on the tab the relevant page will be routed and presented on User Interface
 

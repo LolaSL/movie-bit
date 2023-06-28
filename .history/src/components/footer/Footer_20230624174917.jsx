@@ -27,7 +27,7 @@ const Footer = () => {
             seeing.
           </p>
         </div>
-        <div className="socialIcons" data-testid="socialIcons-test">
+        <div className="socialIcons" data-test="socialIcons-test">
           <SocialIcon
             className="icon"
             url="https://github.com/"
