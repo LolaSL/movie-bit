@@ -21,7 +21,7 @@ const About = () => {
     setBackground(bg);
   }, [data, url.backdrop]);
   return (
-
+    <div className="container" >
     <div className="heroBanner" data-testid="about-1">
       {!loading && (
         <div className="backdrop-img">
@@ -36,7 +36,7 @@ const About = () => {
        The main aim of  MOVIE-BIT is to help movie lovers know about all kinds of movies, tv-shows, and choose interesting ones. 
         </h3>
       </div>
-    </div>
+    </div></div>
   );
 };
 

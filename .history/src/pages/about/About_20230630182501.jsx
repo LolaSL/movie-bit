@@ -21,22 +21,22 @@ const About = () => {
     setBackground(bg);
   }, [data, url.backdrop]);
   return (
-
-    <div className="heroBanner" data-testid="about-1">
+    <div className="container">
+    <div className="heroBanner container" data-testid="about-1">
       {!loading && (
         <div className="backdrop-img">
           <Img src={background} />
         </div>
       )}
       <div className="opacity-layer"></div>
-      <div className="container">
+      <div>
         <h1 data-testid="about-1">About</h1>
         <h3>
         MOVIE-BIT web application was built on basic Application Program Interface data from The Movie Database - TMDB. It keeps the Top Cast of actors, official videos, similar movies, recommended movies, movies, movie details; a list of movies and tv-shows with the selection by genres and sorting by many options such as title, release, popularity and rating.
        The main aim of  MOVIE-BIT is to help movie lovers know about all kinds of movies, tv-shows, and choose interesting ones. 
         </h3>
       </div>
-    </div>
+    </div></div>
   );
 };
 

@@ -8,6 +8,7 @@
   align-items: center;
   position: relative;
   text-align: justify;
+  // padding: 10px;
   overflow-y: scroll;
   @include md {
     height: 700px;
@@ -33,7 +34,7 @@
   }
   .opacity-layer {
     width: 100%;
-    height: 350px;
+    height: 250px;
     background: linear-gradient(180deg, rgba(4, 21, 45, 0) 0%, #04152d 79.17%);
     position: absolute;
     bottom: 0;
