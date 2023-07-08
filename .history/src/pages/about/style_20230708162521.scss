@@ -1,7 +1,8 @@
 @import "../../mixins.scss";
 .about{
   width: 100%;
-  height: 100%; 
+  height: 100; 
+  // overflow-y: scroll;
 .heroBanner {
   width: 100%;
   height:880px;
